@@ -1,0 +1,108 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-title h1 {
+  font-size: 50px;
+  margin-top: 50px;
+}
+.about-section {
+  display: flex;
+  gap: 60px;
+}
+
+.about-left img{
+  border-radius: 50%;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.about-para {
+  display: flex;
+  font-weight: 500;
+  gap: 50px;
+  align-items: center;
+}
+.about-para h3 {
+  color: red;
+  font-size: 40px;
+}
+
+.uni {
+  color: aqua;
+  margin-bottom: 10px;
+}
+.schl {
+  color: beige;
+}
+.about-skills ul {
+  display: flex;
+  gap: 35px;
+}
+.about-skills ul li {
+  list-style: none;
+  font-size: 30px;
+  background: -webkit-linear-gradient(lightblue, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-skills ul li:hover{
+    transform: scale(110%);
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.about-achievements{
+    display: flex;
+    align-items: center;
+}
+.about-achievements h3{
+    margin-right: 50px;
+    font-size: 40px;
+    color: red;
+}
+.about-achievements p{
+    padding: 9px;
+    color: lightcoral;
+    font-size: 19px;
+}
+.about-achievements p:hover{
+    transform: scale(110%);
+    transition: ease 0.3s;
+    cursor: pointer;
+    background: -webkit-linear-gradient(lightblue, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:768px) {
+  .about{
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .about-title h1{
+    font-size: 50px;
+  padding: 0;  }
+  .about-title img{
+    width: 130px;
+    right: -20px;
+  }
+  .about-section{
+    flex-direction: column;
+  }
+  .about-left{
+    display: none;
+  }
+  .about-right{
+    margin: 10px;
+    font-size: 15px;
+  }
+}
